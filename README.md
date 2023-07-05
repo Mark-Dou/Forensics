@@ -37,5 +37,25 @@ Two pretext tasks, i.e. **facial region guided masking** in the spatial domain a
 
 ## Usage
 
+### Pre-training instruction
+To pre-train ViT-B/16 (recommended default) with multi-node distributed training, run the following on 8 nodes with 8 GPUs each:
+
+````
+python submitit_pretrain.py \
+    --job_dir ${JOB_DIR} \
+    --nodes 8 \
+    --use_volta32 \
+    --batch_size 64 \
+    --model mae_vit_base_patch16 \
+    --norm_pix_loss \
+    --mask_ratio 0.75 \
+    --mask_radius 16 \
+    --epochs 800 \
+    --warmup_epochs 40 \
+    --blr 1.5e-4 --weight_decay 0.05 \
+    --data_path ${IMAGENET_DIR}
+````
+
+
 
 
