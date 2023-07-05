@@ -56,6 +56,9 @@ python submitit_pretrain.py \
     --data_path ${IMAGENET_DIR}
 ````
 
+## Ackownledgement
+This repository is built on [MAE](https://github.com/facebookresearch/mae/tree/main).
+
 
 
 
