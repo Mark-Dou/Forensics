@@ -1,6 +1,11 @@
 # MIFAE-Forensics
 This is the official implementation of MIFAE-Forensics for DeepFake detection.
 
+## Catalog
+- [x] Visualization demo.
+- [x] Pre-training code.
+- [ ] Pre-training checkpoints + Fine-tuning code.
+
 ## Network Structure.
 ![image](https://github.com/Mark-Dou/Forensics/blob/main/Visualization/MIFAE-Forensics.png)
 
@@ -29,3 +34,8 @@ Two pretext tasks, i.e. **facial region guided masking** in the spatial domain a
 ### 3. DeepFake detection via the reconstruction discrepancy.
 
 ![image](https://github.com/Mark-Dou/Forensics/blob/main/Visualization/recon.png)
+
+## Usage
+
+
+
