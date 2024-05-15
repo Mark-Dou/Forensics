@@ -56,6 +56,21 @@ python submitit_pretrain.py \
     --data_path ${IMAGENET_DIR}
 ````
 
+### Fine-tuning instruction
+You can choose different reconstruction strategies through:
+
+1. args.real_recon (reconstruction of real faces only),
+2. args.dual_recon (positive reconstruction on real faces and negative construction on fake faces)
+3. direct fine-tuning without reconstruction.
+
+````
+python partial_finetuning_with_reconstruction.py \
+    --finetune ""\
+    --decoder ""\
+    --real_recon
+````
+
+
 ## Ackownledgement
 This repository is built on [MAE](https://github.com/facebookresearch/mae/tree/main).
 
