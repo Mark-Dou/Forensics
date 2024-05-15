@@ -4,7 +4,7 @@ This is the official implementation of MIFAE-Forensics for DeepFake detection.
 ## Catalog
 - [x] Visualization demo.
 - [x] Pre-training code.
-- [ ] Pre-training checkpoints + Fine-tuning code.
+- [x] Fine-tuning code.
 
 ## Network Structure.
 ![image](https://github.com/Mark-Dou/Forensics/blob/main/Visualization/MIFAE-Forensics.png)
