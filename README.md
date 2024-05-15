@@ -59,15 +59,15 @@ python submitit_pretrain.py \
 ### Fine-tuning instruction
 You can choose different reconstruction strategies through:
 
-1. args.real_recon (reconstruction of real faces only),
-2. args.dual_recon (positive reconstruction on real faces and negative construction on fake faces)
+1. args.recon_real (reconstruction of real faces only),
+2. args.recon_dual (positive reconstruction on real faces and negative construction on fake faces)
 3. direct fine-tuning without reconstruction.
 
 ````
 python partial_finetuning_with_reconstruction.py \
     --finetune ""\
     --decoder ""\
-    --real_recon
+    --recon_real
 ````
 
 
