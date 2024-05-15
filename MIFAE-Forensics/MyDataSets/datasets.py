@@ -4,32 +4,6 @@ import os
 import random
 import numpy as np
 
-
-class VggFace2(Dataset):
-    def __init__(self, transform):
-        super(VggFace2, self).__init__()
-        imgs = []
-        root_dir = ""
-        for identity in os.listdir(root_dir):
-            identity_path = os.path.join(root_dir, identity)
-            for img in os.listdir(identity_path):
-                img_path = os.path.join(identity_path, img)
-                imgs.append((img_path, 0))
-        self.imgs = imgs
-        self.transform = transform
-
-    def __getitem__(self, index):
-        fn, label = self.imgs[index]
-        img = Image.open(fn).convert('RGB')
-
-        if self.transform is not None:
-            img = self.transform(img)
-
-        return img, label
-
-    def __len__(self):
-        return len(self.imgs)
-    
 class FaceForensics(Dataset):
     def __init__(self, img_txt, compression, transform):
         super(FaceForensics, self).__init__()
