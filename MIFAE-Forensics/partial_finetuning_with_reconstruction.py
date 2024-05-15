@@ -37,7 +37,7 @@ from util.misc import NativeScalerWithGradNormCount as NativeScaler
 import models_vit
 import models_mae
 
-from engine_finetune_recon import train_one_epoch, evaluate, features
+from engine_finetune import train_one_epoch, evaluate
 
 from MyDataSets.train_dataset import FaceForensics
 from Recon_loss import RealReconLoss, DualReconLoss
